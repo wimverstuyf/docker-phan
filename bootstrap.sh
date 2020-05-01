@@ -4,7 +4,7 @@ set -xe
 
 # Install git (the php image doesn't have it) which is required by composer
 apt-get update -yqq
-apt-get install git wget libzip-dev libpng-dev libxml2-dev -yqq
+apt-get install git wget libzip-dev libpng-dev libxml2-dev zip unzip -yqq
 apt-get install -y gnumeric --no-install-recommends
 
 # Install phpunit, the tool that we will use for testing
