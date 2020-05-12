@@ -1,4 +1,4 @@
-FROM php:7.3
+FROM php:7.4
 
 WORKDIR /tmp
 
@@ -11,4 +11,3 @@ RUN /bootstrap.sh
 COPY ast_install.sh /ast_install.sh
 RUN chmod +x /ast_install.sh
 RUN /ast_install.sh
-
