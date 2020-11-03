@@ -13,7 +13,7 @@ chmod +x /usr/local/bin/phpunit
 
 # Install mysql driver
 # Here you can install any other extension that you need
-docker-php-ext-install pdo_mysql gd zip bcmath soap
+docker-php-ext-install pdo_mysql gd zip bcmath soap redis
 
 # Install composer
 wget https://composer.github.io/installer.sig -O - -q | tr -d '\n' > installer.sig
