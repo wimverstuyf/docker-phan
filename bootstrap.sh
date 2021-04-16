@@ -13,7 +13,7 @@ chmod +x /usr/local/bin/phpunit
 
 # Install mysql driver
 # Here you can install any other extension that you need
-docker-php-ext-install pdo_mysql gd zip bcmath soap
+docker-php-ext-install pdo_mysql gd zip bcmath soap intl
 
 pecl install -o -f redis && rm -rf /tmp/pear && docker-php-ext-enable redis
 
